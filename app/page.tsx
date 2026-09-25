@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
+import { ThemeToggle } from '@/components/theme-toggle'
 import {
   ArrowRight,
   ChevronLeft,
@@ -176,9 +177,12 @@ export default function Page() {
           <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="header-button" href="#contact">
-          Book a Discovery Call <ArrowRight size={16} />
-        </a>
+        <div className="header-actions">
+          <ThemeToggle />
+          <a className="header-button" href="#contact">
+            Book a Discovery Call <ArrowRight size={16} />
+          </a>
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -297,7 +301,7 @@ export default function Page() {
       {/* Services Section */}
       <motion.section
         id="services"
-        className="gray-section"
+        className="gray-section services-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.14 }}
@@ -404,7 +408,7 @@ export default function Page() {
       {/* Testimonials Section */}
       <motion.section
         id="testimonials"
-        className="gray-section"
+        className="gray-section testimonials-section"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.14 }}
