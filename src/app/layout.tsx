@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
+import { SITE_INFO } from '@/constants/site-data'
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -11,8 +12,8 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Pratima Hegde | Career Coach & Life Skills Trainer',
-  description: 'Empowering professionals to rise with clarity, confidence, and purpose. Berlin-based. Globally seasoned.',
+  title: SITE_INFO.title,
+  description: SITE_INFO.tagline,
   generator: 'v0.app',
   icons: {
     icon: [
@@ -76,4 +77,3 @@ export default function RootLayout({
     </html>
   )
 }
-
