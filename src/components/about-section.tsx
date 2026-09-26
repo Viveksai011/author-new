@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowRight, Phone } from 'lucide-react'
 import { Reveal } from './reveal'
 import { SITE_IMAGES } from '@/constants/site-data'
@@ -6,8 +7,20 @@ export function AboutSection() {
   return (
     <Reveal id="about" className="section about">
       <div className="about-images">
-        <img className="about-photo main-photo" src={SITE_IMAGES.portrait} alt="Pratima Hegde smiling portrait" />
-        <img className="about-photo small-photo" src={SITE_IMAGES.confident} alt="Pratima Hegde confident portrait" />
+        <Image
+          className="about-photo main-photo"
+          src={SITE_IMAGES.portrait}
+          alt="Pratima Hegde smiling portrait"
+          width={500}
+          height={600}
+        />
+        <Image
+          className="about-photo small-photo"
+          src={SITE_IMAGES.confident}
+          alt="Pratima Hegde confident portrait"
+          width={300}
+          height={400}
+        />
         <div className="callout">
           <Phone size={18} /> Berlin · Global Executive Coaching
         </div>

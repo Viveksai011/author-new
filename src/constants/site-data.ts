@@ -149,10 +149,136 @@ export const STATS = [
 ]
 
 export const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Book', href: '#book' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/#home' },
+  { label: 'About', href: '/#about' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Book', href: '/about-book' },
+  { label: 'Testimonials', href: '/#testimonials' },
+  { label: 'Contact', href: '/#contact' },
 ]
+
+export const BOOK_DETAILS = {
+  title: 'Unstoppable',
+  subtitle: 'Journey from "What is she even thinking?" to "Wow, she is thriving!"',
+  tagline: 'A story of resilience, ambition, and becoming — from a small-town girl to a global professional.',
+  authorName: 'Pratima R. Hegde',
+  authorTitle: 'Author Release · 35 Chapters',
+  rating: '4.9 / 5.0 Rating',
+  badgeText: 'Official Author Publication',
+  overview:
+    'This book shares the journey of navigating 16 years of corporate life, motherhood, social expectations, and personal transformation. It is the book my younger self needed — and the book many women and ambitious professionals need today.',
+  summary:
+    'A profound collection of experiences and lessons featuring 35 empowering chapters. Each chapter is brimming with unique stories that culminate in messages of positivity, breaking social barriers, and striving for excellence.',
+  narrativeSection: {
+    kicker: 'Behind The Story',
+    heading: 'The book my younger self needed — and the roadmap for',
+    headingAccent: 'your becoming.',
+    quote: '“What is she even thinking? — to — Wow, she is thriving!”',
+    videoUrl: 'https://res.cloudinary.com/dko4n7zoc/video/upload/v1790428122/Book_videoVertical_V2_1_ke40vq.mp4',
+    videoTitle: 'Watch Book Trailer',
+    bulletPoints: [
+      'Grounded in 16 years of international corporate leadership and matrix team management.',
+      'Honest reflections on motherhood, cultural relocations, and breaking social expectations.',
+      'Actionable messages of positivity designed to rebuild your confidence without burnout.',
+    ],
+  },
+  audienceSection: {
+    kicker: 'Target Readers',
+    heading: 'Who is this book written for?',
+    subtitle:
+      'Whether you are carving your career path, navigating life transitions, or returning after a break, this book is your roadmap.',
+  },
+  chaptersSection: {
+    kicker: '35 Empowering Chapters',
+    heading: 'Featured Chapter Sneak Peeks',
+    subtitle: 'Take a glance into the story arcs and transformative frameworks waiting inside.',
+  },
+  purchaseSection: {
+    kicker: 'Order Your Copy',
+    heading: 'Available Worldwide Now',
+    subtitle: 'Choose your preferred format and retailer to start reading today.',
+  },
+  highlights: [
+    { number: '35', label: 'Empowering Chapters' },
+    { number: '16+', label: 'Years Corporate Insights' },
+    { number: '4.9★', label: 'Reader Rating' },
+    { number: 'Global', label: 'Worldwide Delivery' },
+  ],
+  targetAudience: [
+    {
+      title: 'Ambitious Professionals',
+      description: 'Navigating corporate growth, career identity, and balancing family expectations.',
+    },
+    {
+      title: 'Young Career Seekers',
+      description: 'Looking for authentic direction, self-belief, and actionable strategic clarity.',
+    },
+    {
+      title: 'Rebuilding After Setbacks',
+      description: 'Returning after a career break, international relocation, or personal transition.',
+    },
+    {
+      title: 'Breaking Social Expectations',
+      description: 'Stepping out of traditional comfort zones to build an unstoppable life.',
+    },
+    {
+      title: 'Real-Life Inspiration Seekers',
+      description: 'Seeking powerful insights grounded in real corporate & life experience, not theory.',
+    },
+  ],
+  sampleChapters: [
+    {
+      num: '01',
+      title: 'Small-Town Roots to Global Stage',
+      theme: 'Resilience & Identity',
+      summary: 'Overcoming social limitations and stepping confidently into global corporate environments.',
+    },
+    {
+      num: '12',
+      title: 'What Is She Even Thinking?',
+      theme: 'Mindset Shift',
+      summary: 'Turning doubts and societal skepticism into fuel for unstoppable professional ambition.',
+    },
+    {
+      num: '21',
+      title: 'Motherhood, Career & Balance',
+      theme: 'Life Integration',
+      summary: 'Redefining success on your own terms while managing career impact and personal life.',
+    },
+    {
+      num: '35',
+      title: 'Wow, She Is Thriving!',
+      theme: 'Unstoppable Becoming',
+      summary: 'Embracing self-ownership, executive presence, and continuous global transformation.',
+    },
+  ],
+  storeLinks: [
+    {
+      store: 'Amazon',
+      format: 'Paperback Edition',
+      url: 'https://www.amazon.in/dp/9363315479/ref=sr_1_1?dib=eyJ2IjoiMSJ9.tGGM_tZWRDrZvj-cu_35eA.IY20BOtUlpjCKN9NWbp_tpykMOfz40tmGofHRrZzDzA&dib_tag=se&keywords=9789363315471&qid=1725847045&sr=8-1',
+      badge: 'Best Seller',
+      cta: 'Order on Amazon',
+    },
+    {
+      store: 'Flipkart',
+      format: 'Paperback Edition',
+      url: 'https://www.amazon.in/dp/9363315479/ref=sr_1_1?dib=eyJ2IjoiMSJ9.tGGM_tZWRDrZvj-cu_35eA.IY20BOtUlpjCKN9NWbp_tpykMOfz40tmGofHRrZzDzA&dib_tag=se&keywords=9789363315471&qid=1725847045&sr=8-1',
+      badge: 'Popular Choice',
+      cta: 'Order on Flipkart',
+    },
+    {
+      store: 'BookLeaf Publisher',
+      format: 'Instant E-Book Edition',
+      url: 'https://ebooks.bookleafpub.com/product-page/unstoppable-journey-from-what-is-she-even-thinking-to-wow-she-is-thriving',
+      badge: 'Digital E-Book',
+      cta: 'Download E-Book',
+    },
+  ],
+  meta: {
+    title: 'Unstoppable: Journey from "What is she even thinking?" to "Wow, she is thriving!" | Pratima R. Hegde',
+    description: 'Discover the empowering book by Pratima R. Hegde featuring 35 chapters on resilience, corporate growth, career clarity, and self-belief.',
+    keywords: ['Unstoppable book', 'Pratima Hegde', 'Career Coaching', 'Women in Leadership', 'Personal Growth', 'Corporate Resilience'],
+  }
+}
+

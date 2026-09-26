@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, Menu, X } from 'lucide-react'
 import { ThemeToggle } from './theme-toggle'
@@ -22,25 +23,25 @@ export function SiteHeader() {
 
   return (
     <header className="header">
-      <a href="#home" className="logo" onClick={closeMobileMenu}>
+      <Link href="/" className="logo" onClick={closeMobileMenu}>
         <span className="logo-mark">ph</span>
         {SITE_INFO.name}
-      </a>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="desktop-nav" aria-label="Main Navigation">
         {NAV_LINKS.map((link) => (
-          <a key={link.label} href={link.href}>
+          <Link key={link.label} href={link.href}>
             {link.label}
-          </a>
+          </Link>
         ))}
       </nav>
 
       <div className="header-actions">
         <ThemeToggle />
-        <a className="header-button desktop-cta" href="#contact">
+        <Link className="header-button desktop-cta" href="/#contact">
           Book a Discovery Call <ArrowRight size={16} />
-        </a>
+        </Link>
         <button
           type="button"
           className="mobile-menu-btn"
@@ -64,13 +65,13 @@ export function SiteHeader() {
           >
             <nav className="mobile-nav" aria-label="Mobile Navigation">
               {NAV_LINKS.map((link) => (
-                <a key={link.label} href={link.href} onClick={closeMobileMenu}>
+                <Link key={link.label} href={link.href} onClick={closeMobileMenu}>
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a className="primary-button mobile-cta" href="#contact" onClick={closeMobileMenu}>
+              <Link className="primary-button mobile-cta" href="/#contact" onClick={closeMobileMenu}>
                 Book a Discovery Call <ArrowRight size={16} />
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { Reveal } from './reveal'
@@ -42,7 +43,13 @@ export function WhyCoachSection() {
           })}
         </div>
       </div>
-      <img className="why-photo" src={SITE_IMAGES.book} alt="Unstoppable book cover and author" />
+      <Image
+        className="why-photo"
+        src={SITE_IMAGES.book}
+        alt="Unstoppable book cover and author"
+        width={500}
+        height={600}
+      />
     </Reveal>
   )
 }

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Reveal } from './reveal'
 import { SITE_IMAGES } from '@/constants/site-data'
@@ -20,7 +21,12 @@ export function BookFeatureSection() {
           Order your copy <ArrowRight size={18} />
         </a>
       </div>
-      <img src={SITE_IMAGES.bookDesk} alt="Unstoppable book on a desk" />
+      <Image
+        src={SITE_IMAGES.bookDesk}
+        alt="Unstoppable book on a desk"
+        width={600}
+        height={400}
+      />
     </Reveal>
   )
 }
