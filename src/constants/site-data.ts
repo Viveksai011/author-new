@@ -17,6 +17,16 @@ export const SITE_IMAGES = {
   sky: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled-1.JPG-fTAyuDkF0hwFlaI9Yi7QRLGxdK4lzX.jpeg',
 }
 
+export const PUBLIC_IMAGES = {
+  img1959: '/IMG_1959.jpg.jpeg',
+  img1961: '/IMG_1961.JPG.jpeg',
+  img1989: '/IMG_1989.JPG.jpeg',
+  img1990: '/IMG_1990.JPG.jpeg',
+  img2802: '/IMG_2802.jpg.jpeg',
+  img2805: '/IMG_2805.JPG.jpeg',
+  woodenTable: '/wooden-board-empty-table-top-blurred-background-Recovered2.JPG (1).jpeg',
+}
+
 export const HERO_SLIDES = [
   {
     image: SITE_IMAGES.bookHero,
@@ -150,10 +160,8 @@ export const STATS = [
 
 export const NAV_LINKS = [
   { label: 'Home', href: '/#home' },
-  { label: 'About', href: '/#about' },
   { label: 'Services', href: '/#services' },
   { label: 'Book', href: '/about-book' },
-  { label: 'Testimonials', href: '/#testimonials' },
   { label: 'Contact', href: '/#contact' },
 ]
 
@@ -279,6 +287,5 @@ export const BOOK_DETAILS = {
     title: 'Unstoppable: Journey from "What is she even thinking?" to "Wow, she is thriving!" | Pratima R. Hegde',
     description: 'Discover the empowering book by Pratima R. Hegde featuring 35 chapters on resilience, corporate growth, career clarity, and self-belief.',
     keywords: ['Unstoppable book', 'Pratima Hegde', 'Career Coaching', 'Women in Leadership', 'Personal Growth', 'Corporate Resilience'],
-  }
+  },
 }
-

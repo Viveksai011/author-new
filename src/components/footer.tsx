@@ -1,5 +1,6 @@
+import Link from 'next/link'
 import { Mail, MapPin } from 'lucide-react'
-import { NAV_LINKS, SITE_INFO } from '@/constants/site-data'
+import { SITE_INFO } from '@/constants/site-data'
 
 function LinkedinIcon({ size = 16, className = '' }: { size?: number; className?: string }) {
   return (
@@ -20,43 +21,51 @@ export function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <div>
-          <a href="#home" className="logo">
+        <div className="footer-col">
+          <Link href="/" className="logo">
             <span className="logo-mark">ph</span>
             {SITE_INFO.name}
-          </a>
-          <p>
+          </Link>
+          <p className="mt-2 text-sm leading-relaxed text-slate-400 max-w-[320px]">
             Career Coach, Mentor, and Life Skills Trainer helping professionals navigate career transitions with confidence and clarity.
           </p>
         </div>
-        <div>
-          <b>Explore</b>
-          {NAV_LINKS.slice(1, 5).map((link) => (
-            <a key={link.label} href={link.href}>
-              {link.label}
-            </a>
-          ))}
+
+        <div className="footer-col">
+          <b className="footer-title">Explore</b>
+          <Link href="/#home">Home</Link>
+          <Link href="/#about">About</Link>
+          <Link href="/about-book">Unstoppable Book</Link>
+          <Link href="/#testimonials">Testimonials</Link>
+          <Link href="/#contact">Contact</Link>
         </div>
-        <div>
-          <b>Services</b>
-          <a href="#services">Career Coaching</a>
-          <a href="#services">Career Break Support</a>
-          <a href="#services">Relocation Guidance</a>
-          <a href="#services">Group Workshops</a>
+
+        <div className="footer-col">
+          <b className="footer-title">Services</b>
+          <Link href="/services/one-to-one-coaching">One-to-One Coaching</Link>
+          <Link href="/services/group-sessions-workshops">Group Sessions & Workshops</Link>
+          <Link href="/services/corporate-training">Corporate Training</Link>
         </div>
-        <div>
-          <b>Connect</b>
+
+        <div className="footer-col">
+          <b className="footer-title">Connect</b>
           <span>
             <Mail size={16} /> {SITE_INFO.email}
           </span>
           <span>
             <MapPin size={16} /> Berlin, Germany
           </span>
-          <span style={{ marginTop: '0.5rem' }}>
+          <a
+            href={SITE_INFO.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-1"
+          >
             <LinkedinIcon size={16} /> LinkedIn Profile
-          </span>
+          </a>
         </div>
       </div>
+
       <div className="footer-bottom">
         <span>&copy; {new Date().getFullYear()} Pratima Hegde. All rights reserved.</span>
         <span>Berlin-Based · Serving Global Clients</span>
