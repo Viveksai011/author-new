@@ -13,6 +13,7 @@ export function ServiceCarouselSection({ service }: { service: ServiceDetail }) 
     href: service.ctaHref,
     image: s.image,
     imageAlt: s.title,
+    imagePosition: s.imagePosition || 'center top',
     overlay: (
       <span className="rounded-full bg-[#ff5125] px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-md">
         {s.badge}

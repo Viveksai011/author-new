@@ -14,6 +14,7 @@ export interface ServiceSlideData {
   action: string
   badge: string
   image: string
+  imagePosition?: string
 }
 
 export interface ServiceDetail {
@@ -132,6 +133,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Book Discovery Call',
         badge: 'Pillar 01',
         image: PUBLIC_IMAGES.img1961,
+        imagePosition: 'center 10%',
       },
       {
         id: 'rebuild',
@@ -140,6 +142,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Learn More',
         badge: 'Pillar 02',
         image: PUBLIC_IMAGES.img1959,
+        imagePosition: 'center 15%',
       },
       {
         id: 'abroad',
@@ -148,6 +151,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Explore Roadmap',
         badge: 'Pillar 03',
         image: PUBLIC_IMAGES.img1989,
+        imagePosition: 'center 5%',
       },
       {
         id: 'presence',
@@ -156,6 +160,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Start Journey',
         badge: 'Pillar 04',
         image: PUBLIC_IMAGES.img2805,
+        imagePosition: 'center 20%',
       },
     ],
     howSessionsWorkTitle: 'How Coaching Sessions Work',
@@ -261,6 +266,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Enroll in Batch',
         badge: 'Module 01',
         image: PUBLIC_IMAGES.img1990,
+        imagePosition: 'center 10%',
       },
       {
         id: 'goals',
@@ -269,6 +275,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Join Workshop',
         badge: 'Module 02',
         image: PUBLIC_IMAGES.img1989,
+        imagePosition: 'center 5%',
       },
       {
         id: 'finance',
@@ -277,6 +284,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'View Syllabus',
         badge: 'Module 03',
         image: PUBLIC_IMAGES.img2802,
+        imagePosition: 'center 20%',
       },
       {
         id: 'style',
@@ -285,6 +293,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Explore Topic',
         badge: 'Module 04',
         image: PUBLIC_IMAGES.img1959,
+        imagePosition: 'center 15%',
       },
     ],
     howSessionsWorkTitle: 'How Workshops Work',
@@ -387,6 +396,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Request TNA Proposal',
         badge: 'Module 01',
         image: PUBLIC_IMAGES.img1989,
+        imagePosition: 'center 5%',
       },
       {
         id: 'corp-ownership',
@@ -395,6 +405,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Inquire for Team',
         badge: 'Module 02',
         image: PUBLIC_IMAGES.img1990,
+        imagePosition: 'center 10%',
       },
       {
         id: 'corp-stress',
@@ -403,6 +414,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'Schedule Workshop',
         badge: 'Module 03',
         image: PUBLIC_IMAGES.img1961,
+        imagePosition: 'center 10%',
       },
       {
         id: 'corp-presence',
@@ -411,6 +423,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
         action: 'View Training Details',
         badge: 'Module 04',
         image: PUBLIC_IMAGES.img2802,
+        imagePosition: 'center 20%',
       },
     ],
     howSessionsWorkTitle: 'How Corporate Training Works',

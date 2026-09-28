@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={jakarta.variable} suppressHydrationWarning>
+    <html lang="en" className={jakarta.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head suppressHydrationWarning>
         <script
           dangerouslySetInnerHTML={{

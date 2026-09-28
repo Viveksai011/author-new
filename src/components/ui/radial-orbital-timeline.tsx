@@ -25,6 +25,7 @@ export interface RadialOrbitalTimelineProps {
 export default function RadialOrbitalTimeline({
   timelineData,
 }: RadialOrbitalTimelineProps) {
+  const [mounted, setMounted] = useState<boolean>(false)
   const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({})
   const [viewMode] = useState<'orbital'>('orbital')
   const [rotationAngle, setRotationAngle] = useState<number>(0)
@@ -40,6 +41,10 @@ export default function RadialOrbitalTimeline({
   const containerRef = useRef<HTMLDivElement>(null)
   const orbitRef = useRef<HTMLDivElement>(null)
   const nodeRefs = useRef<Record<number, HTMLDivElement | null>>({})
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Measure container width for responsive radius calculation
   useEffect(() => {
@@ -125,10 +130,18 @@ export default function RadialOrbitalTimeline({
   }
 
   const calculateNodePosition = (index: number, total: number) => {
-    const angle = ((index / total) * 360 + rotationAngle) % 360
-    
+    const angle = ((index / total) * 360 + (mounted ? rotationAngle : 0)) % 360
+
     // Dynamic responsive radius based on viewport width
-    const radius = containerWidth < 480 ? 115 : containerWidth < 640 ? 140 : containerWidth < 1024 ? 175 : 210
+    const radius = !mounted
+      ? 175
+      : containerWidth < 480
+      ? 115
+      : containerWidth < 640
+      ? 140
+      : containerWidth < 1024
+      ? 175
+      : 210
     const radian = (angle * Math.PI) / 180
 
     const x = radius * Math.cos(radian) + centerOffset.x
@@ -226,6 +239,7 @@ export default function RadialOrbitalTimeline({
                 }}
                 className="absolute transition-all duration-700 cursor-pointer"
                 style={nodeStyle}
+                suppressHydrationWarning
                 onClick={(e) => {
                   e.stopPropagation()
                   toggleItem(item.id)

@@ -17,7 +17,7 @@ export function BookFeatureSection() {
         <p>
           This book candidly details the 16-year journey of navigating corporate leadership, motherhood, cultural expectations, and personal transformation.
         </p>
-        <a className="primary-button" href="#contact">
+        <a className="primary-button" href="/about-book#buy-options">
           Order your copy <ArrowRight size={18} />
         </a>
       </div>

@@ -27,7 +27,7 @@ export function Footer() {
             {SITE_INFO.name}
           </Link>
           <p className="mt-2 text-sm leading-relaxed text-slate-400 max-w-[320px]">
-            Career Coach, Mentor, and Life Skills Trainer helping professionals navigate career transitions with confidence and clarity.
+            Career Coach, Mentor, Life Skill Trainer & Image Consultant helping professionals navigate career transitions with confidence and clarity.
           </p>
         </div>
 

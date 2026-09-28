@@ -22,7 +22,7 @@ export function ServicesSection() {
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
               </div>
-              <a href="#contact">
+              <a href={service.href}>
                 Learn more <ArrowRight size={16} />
               </a>
             </article>
