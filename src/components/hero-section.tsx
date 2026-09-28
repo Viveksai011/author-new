@@ -27,7 +27,10 @@ export function HeroSection() {
         <motion.div
           key={activeSlide}
           className="hero-slide"
-          style={{ backgroundImage: `url(${slide.image})` }}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundPosition: slide.imagePosition || 'center 20%',
+          }}
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
@@ -41,10 +44,15 @@ export function HeroSection() {
             <h1>{slide.title}</h1>
             <p className="hero-copy">{slide.text}</p>
             <div className="hero-actions">
-              <a className="primary-button" href={activeSlide === 2 ? '#book' : '#contact'}>
+              <a className="primary-button" href={activeSlide === 2 ? '/about-book#buy-options' : '#contact'}>
                 {activeSlide === 2 ? 'Order your copy' : 'Book a Discovery Call'} <ArrowRight size={18} />
               </a>
-              <a className="secondary-button" href={activeSlide === 2 ? '#contact' : '#about'}>
+              <a
+                className="secondary-button"
+                href={activeSlide === 2 ? 'https://wa.me/919986888634' : '#about'}
+                target={activeSlide === 2 ? '_blank' : undefined}
+                rel={activeSlide === 2 ? 'noopener noreferrer' : undefined}
+              >
                 {activeSlide === 2 ? 'Meet Pratima' : 'Discover my story'} <ArrowRight size={18} />
               </a>
             </div>

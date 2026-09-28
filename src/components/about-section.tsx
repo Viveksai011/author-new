@@ -13,6 +13,7 @@ export function AboutSection() {
           alt="Pratima Hegde smiling portrait"
           width={500}
           height={600}
+          style={{ objectPosition: 'center 15%' }}
         />
         <Image
           className="about-photo small-photo"
@@ -20,6 +21,7 @@ export function AboutSection() {
           alt="Pratima Hegde confident portrait"
           width={300}
           height={400}
+          style={{ objectPosition: 'center 10%' }}
         />
         <div className="callout">
           <Phone size={18} /> Berlin · Global Executive Coaching

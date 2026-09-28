@@ -1,11 +1,11 @@
 export const SITE_INFO = {
   name: 'Pratima Hegde',
-  title: 'Pratima Hegde | Career Coach & Life Skills Trainer',
-  role: 'Career Coach & Life Skills Trainer',
+  title: 'Pratima Hegde |  Career Coach, Life Skill Trainer & Image Consultant',
+  role: ' Career Coach, Life Skill Trainer & Image Consultant',
   location: 'Berlin-based · Globally experienced',
   tagline: 'Empowering professionals to rise with clarity, confidence, and purpose.',
   email: 'hello@pratimah.com',
-  linkedinUrl: 'https://linkedin.com',
+  linkedinUrl: 'https://www.linkedin.com/in/pratima-hegde-9357102a/',
 }
 
 export const SITE_IMAGES = {
@@ -33,18 +33,21 @@ export const HERO_SLIDES = [
     kicker: 'Career clarity for a changing world',
     title: 'Empowering professionals to rise with clarity, confidence, and purpose.',
     text: 'Berlin-based. Globally seasoned. Driving career impact without borders for ambitious leaders and professionals.',
+    imagePosition: 'center 20%',
   },
   {
     image: SITE_IMAGES.confident,
     kicker: '16 years of global experience',
     title: 'Build the confidence to become unstoppable in your journey.',
     text: 'Career coaching, mentoring, and transformation programs tailored for professionals navigating change.',
+    imagePosition: 'center 15%',
   },
   {
     image: SITE_IMAGES.book,
     kicker: 'Author of Unstoppable...!',
     title: 'A story of resilience, ambition, and global becoming.',
     text: 'The book my younger self needed — and the roadmap many professionals need today to achieve their dreams.',
+    imagePosition: 'center 25%',
   },
 ]
 
@@ -68,20 +71,19 @@ export const FEATURE_CARDS = [
 
 export const SERVICES = [
   {
-    title: 'One-to-One Career Coaching',
-    text: 'Gain clarity on your core strengths, define an actionable career path, and build unshakable confidence in every strategic decision.',
+    title: 'One-to-One Coaching',
+    text: 'Personalized 1-on-1 guidance for clarity, confidence, and meaningful direction in your career and life.',
+    href: '/services/one-to-one-coaching',
   },
   {
-    title: 'Confidence After a Career Break',
-    text: 'Rebuild your professional identity, showcase your unique value, and return to the corporate workforce with renewed direction and self-belief.',
+    title: 'Group Sessions & Workshops',
+    text: 'Interactive, collective learning sessions for personal growth, professional development, and real-world skills.',
+    href: '/services/group-sessions-workshops',
   },
   {
-    title: 'Finding Yourself Abroad',
-    text: 'Navigate international relocation, cross-cultural career integration, and your next chapter abroad with intention and fulfillment.',
-  },
-  {
-    title: 'Group Trainings & Workshops',
-    text: 'Practical, high-impact training in interview mastery, strategic goal setting, executive presence, and professional communication.',
+    title: 'Corporate Training',
+    text: 'Professional development that elevates teams, strengthens communication, and builds leadership.',
+    href: '/services/corporate-training',
   },
 ]
 
@@ -265,7 +267,7 @@ export const BOOK_DETAILS = {
       store: 'Amazon',
       format: 'Paperback Edition',
       url: 'https://www.amazon.in/dp/9363315479/ref=sr_1_1?dib=eyJ2IjoiMSJ9.tGGM_tZWRDrZvj-cu_35eA.IY20BOtUlpjCKN9NWbp_tpykMOfz40tmGofHRrZzDzA&dib_tag=se&keywords=9789363315471&qid=1725847045&sr=8-1',
-      badge: 'Best Seller',
+      badge: 'Customer’s Favourite',
       cta: 'Order on Amazon',
     },
     {

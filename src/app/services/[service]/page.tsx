@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       title: pageTitle,
       description: pageDescription,
       url: pageCanonical,
-      siteName: 'Pratima R. Hegde | Career Coach & Life Skills Trainer',
+      siteName: 'Pratima R. Hegde |  Career Coach, Life Skill Trainer & Image Consultant',
       type: 'article',
       images: [
         {

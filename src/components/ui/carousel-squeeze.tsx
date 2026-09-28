@@ -26,6 +26,8 @@ export type SqueezeSlide = {
   image?: string
   /** Alt text for that picture. Leave it out and the picture reads as decoration. */
   imageAlt?: string
+  /** Object position for cropping/centering the picture (e.g. 'center top', 'center 20%'). Defaults to 'center top'. */
+  imagePosition?: string
   /** Any CSS background — a gradient, a colour, layers. Used when there is no picture. */
   background?: string
   /** Sits in the corner of the open panel: a wordmark, a logo, a caption. */
@@ -388,6 +390,7 @@ function Picture({ slide }: { slide: SqueezeSlide }) {
   const box = {
     width: 'var(--sq-hero)',
     minWidth: '100%',
+    objectPosition: slide.imagePosition || 'center top',
   } as const
 
   if (slide.image) {
