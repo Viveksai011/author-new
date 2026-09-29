@@ -14,23 +14,22 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: SITE_INFO.title,
   description: SITE_INFO.tagline,
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/IMG_2802.jpg.jpeg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/IMG_2802.jpg.jpeg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/IMG_2802.jpg.jpeg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: 'IMG_2802.jpg.jpeg',
   },
 }
 
