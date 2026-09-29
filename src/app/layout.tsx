@@ -17,19 +17,18 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/IMG_2802.jpg.jpeg',
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2806.jpg-bgSyaVR5t9ZT51v0ENw0yHOB7GR7z6.jpeg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/IMG_2802.jpg.jpeg',
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2806.jpg-bgSyaVR5t9ZT51v0ENw0yHOB7GR7z6.jpeg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/IMG_2802.jpg.jpeg',
-        type: 'image/svg+xml',
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2806.jpg-bgSyaVR5t9ZT51v0ENw0yHOB7GR7z6.jpeg',
       },
     ],
-    apple: 'IMG_2802.jpg.jpeg',
+    apple: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2806.jpg-bgSyaVR5t9ZT51v0ENw0yHOB7GR7z6.jpeg',
   },
 }
 
