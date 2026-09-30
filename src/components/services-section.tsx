@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import { Reveal } from './reveal'
 import { SERVICES } from '@/constants/site-data'
 
@@ -22,9 +23,9 @@ export function ServicesSection() {
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
               </div>
-              <a href={service.href}>
+              <Link href={service.href}>
                 Learn more <ArrowRight size={16} />
-              </a>
+              </Link>
             </article>
           ))}
         </div>

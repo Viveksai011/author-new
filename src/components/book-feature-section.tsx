@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Reveal } from './reveal'
 import { SITE_IMAGES } from '@/constants/site-data'
@@ -17,9 +18,9 @@ export function BookFeatureSection() {
         <p>
           This book candidly details the 16-year journey of navigating corporate leadership, motherhood, cultural expectations, and personal transformation.
         </p>
-        <a className="primary-button" href="/about-book#buy-options">
+        <Link className="primary-button" href="/about-book#buy-options">
           Order your copy <ArrowRight size={18} />
-        </a>
+        </Link>
       </div>
       <Image
         src={SITE_IMAGES.bookDesk}

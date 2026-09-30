@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, ChevronLeft, ChevronRight, Globe } from 'lucide-react'
 import { HERO_SLIDES } from '@/constants/site-data'
@@ -44,17 +45,17 @@ export function HeroSection() {
             <h1>{slide.title}</h1>
             <p className="hero-copy">{slide.text}</p>
             <div className="hero-actions">
-              <a className="primary-button" href={activeSlide === 2 ? '/about-book#buy-options' : '#contact'}>
+              <Link className="primary-button" href={activeSlide === 2 ? '/about-book#buy-options' : 'https://calendly.com/hello-pratimahegde/30min'}>
                 {activeSlide === 2 ? 'Order your copy' : 'Book a Discovery Call'} <ArrowRight size={18} />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="secondary-button"
                 href={activeSlide === 2 ? 'https://wa.me/919986888634' : '#about'}
                 target={activeSlide === 2 ? '_blank' : undefined}
                 rel={activeSlide === 2 ? 'noopener noreferrer' : undefined}
               >
                 {activeSlide === 2 ? 'Meet Pratima' : 'Discover my story'} <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>

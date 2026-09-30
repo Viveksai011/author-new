@@ -39,9 +39,9 @@ export function ServiceHero({ service }: { service: ServiceDetail }) {
               >
                 <Calendar size={18} /> {service.ctaText}
               </Link>
-              <a href="#details" className="secondary-button text-base">
+              <Link href="#details" className="secondary-button text-base">
                 Explore Program Details <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

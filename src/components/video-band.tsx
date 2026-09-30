@@ -1,4 +1,5 @@
 import { Play } from 'lucide-react'
+import Link from 'next/link'
 import { Reveal } from './reveal'
 import { SITE_IMAGES } from '@/constants/site-data'
 
@@ -26,9 +27,9 @@ export function VideoBand() {
           Your potential is waiting<br />
           to be remembered.
         </h2>
-        <a className="play-button" href="#contact" aria-label="Book a discovery call">
+        <Link className="play-button" href="#contact" aria-label="Book a discovery call">
           <Play fill="currentColor" size={24} />
-        </a>
+        </Link>
       </div>
     </Reveal>
   )

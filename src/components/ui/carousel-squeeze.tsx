@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import {
   type ComponentProps,
   type CSSProperties,
@@ -482,7 +483,7 @@ function Action({ slide, shown }: { slide: SqueezeSlide; shown: boolean }) {
 
   if (slide.href) {
     return (
-      <a
+      <Link
         href={slide.href}
         target={slide.target}
         rel={slide.target === '_blank' ? 'noreferrer' : undefined}
@@ -491,7 +492,7 @@ function Action({ slide, shown }: { slide: SqueezeSlide; shown: boolean }) {
         className={dress}
       >
         {inside}
-      </a>
+      </Link>
     )
   }
 

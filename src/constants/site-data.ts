@@ -4,8 +4,10 @@ export const SITE_INFO = {
   role: ' Career Coach, Life Skill Trainer & Image Consultant',
   location: 'Berlin-based · Globally experienced',
   tagline: 'Empowering professionals to rise with clarity, confidence, and purpose.',
-  email: 'hello@pratimah.com',
+  email: 'hello@pratimahegde.com',
   linkedinUrl: 'https://www.linkedin.com/in/pratima-hegde-9357102a/',
+  calendlyUrl: 'https://calendly.com/hello-pratimahegde/30min'
+
 }
 
 export const SITE_IMAGES = {

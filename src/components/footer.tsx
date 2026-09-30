@@ -55,14 +55,14 @@ export function Footer() {
           <span>
             <MapPin size={16} /> Berlin, Germany
           </span>
-          <a
+          <Link
             href={SITE_INFO.linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-1"
           >
             <LinkedinIcon size={16} /> LinkedIn Profile
-          </a>
+          </Link>
         </div>
       </div>
 

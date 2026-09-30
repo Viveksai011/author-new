@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowRight, Phone } from 'lucide-react'
 import { Reveal } from './reveal'
 import { SITE_IMAGES } from '@/constants/site-data'
@@ -44,9 +45,9 @@ export function AboutSection() {
           <span>Gentle but powerful mindset work</span>
           <span>Action plans that create real results</span>
         </div>
-        <a className="primary-button" href="#contact">
+        <Link className="primary-button" href="https://calendly.com/hello-pratimahegde/30min">
           Start your journey <ArrowRight size={18} />
-        </a>
+        </Link>
       </div>
     </Reveal>
   )

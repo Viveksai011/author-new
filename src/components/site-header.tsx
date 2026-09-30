@@ -196,7 +196,7 @@ export function SiteHeader() {
 
       <div className="header-actions">
         <ThemeToggle />
-        <Link className="header-button desktop-cta" href="/#contact">
+        <Link className="header-button desktop-cta" href="https://calendly.com/hello-pratimahegde/30min" target='_blank' rel='noopener noreferrer'>
           Book a Discovery Call <ArrowRight size={16} />
         </Link>
         <button
@@ -302,7 +302,7 @@ export function SiteHeader() {
               </Link>
 
               <div className="pt-4">
-                <Link className="primary-button mobile-cta w-full justify-center" href="/#contact" onClick={closeMobileMenu}>
+                <Link className="primary-button mobile-cta w-full justify-center" href="https://calendly.com/hello-pratimahegde/30min" onClick={closeMobileMenu}>
                   Book a Discovery Call <ArrowRight size={16} />
                 </Link>
               </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight, ShoppingBag, Sparkles, Star } from 'lucide-react'
 import { BOOK_DETAILS, SITE_IMAGES } from '@/constants/site-data'
@@ -56,15 +57,15 @@ export function BookHeroSection() {
 
             {/* Hero Action CTA Buttons */}
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
+              <Link
                 href="#buy-options"
                 className="primary-button text-base shadow-lg shadow-[#ff5125]/30"
               >
                 <ShoppingBag size={18} /> Get Your Copy Today
-              </a>
-              <a href="#chapters" className="secondary-button text-base">
+              </Link>
+              <Link href="#chapters" className="secondary-button text-base">
                 Explore Chapters <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </motion.div>
 

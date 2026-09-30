@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { SITE_INFO } from '@/constants/site-data'
 
 function LinkedinIcon({ size = 14, className = '' }: { size?: number; className?: string }) {
@@ -20,14 +21,14 @@ export function TopStrip() {
     <div className="top-strip">
       <span>{SITE_INFO.role}</span>
       <span>{SITE_INFO.location}</span>
-      <a
+      <Link
         href={SITE_INFO.linkedinUrl}
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: 'inherit', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
       >
         <LinkedinIcon size={14} /> Follow Pratima on LinkedIn
-      </a>
+      </Link>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
@@ -41,14 +42,14 @@ export function BookPurchaseSection() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-[var(--border-color)]">
-                <a
+                <Link
                   href={store.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="primary-button w-full justify-center gap-2 text-sm"
                 >
                   {store.cta} <ChevronRight size={16} />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
