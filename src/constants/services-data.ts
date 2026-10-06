@@ -308,7 +308,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     enrollmentDescription:
       'Share your details along with your preferred workshop topic, and you will be added to the upcoming batch (7–10 participants for maximum interaction).',
     ctaText: 'Enroll for Upcoming Batch',
-    ctaHref: '/#contact',
+    ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLSedTLq2PdhEEbVxyENQQN4G5g_KVDhILwvMuD_35C83KT8qdA/viewform',
     meta: {
       title: 'Group Sessions & Skill Workshops | Pratima R. Hegde',
       description:
@@ -438,7 +438,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     enrollmentDescription:
       'Submit an inquiry with your organization’s details and desired training topics. We will schedule an initial consultation to customize your training program.',
     ctaText: 'Submit Corporate Training Inquiry',
-    ctaHref: '/#contact',
+    ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLSedTLq2PdhEEbVxyENQQN4G5g_KVDhILwvMuD_35C83KT8qdA/viewform',
     meta: {
       title: 'Corporate Training & Executive Workshops | Pratima R. Hegde',
       description:
